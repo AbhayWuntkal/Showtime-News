@@ -10,6 +10,7 @@ Showtime News is a modern news web application that allows users to browse the l
 ✅ Responsive Design: Optimized for desktop, tablet, and mobile devices.<br />
 ✅ Minimalistic UI: Clean and modern user interface using Tailwind CSS.<br />
 ✅ Error Handling: Gracefully handles API failures and displays appropriate messages.<br />
+✅ BookMark Feature: Added a Bookmark feature where you can bookmark interesting news.<br />
 
 📌 Installation & Setup
 
