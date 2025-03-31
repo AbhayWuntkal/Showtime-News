@@ -1,12 +1,40 @@
-# React + Vite
+📰 Showtime News - Stay Updated with the Latest News<br />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Showtime News is a modern news web application that allows users to browse the latest news articles, filter by category, and search for specific news topics. Built with React.js and Tailwind CSS, this app ensures a seamless and responsive user experience.
 
-Currently, two official plugins are available:
+🚀 Features<br />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Search News: Users can search for specific news articles by entering keywords.<br />
+✅ Filter by Category: News can be filtered by different categories such as Politics, Sports, Technology, and more.<br />
+✅ Loading State Handling: Proper loading indicators while fetching news data.<br />
+✅ Responsive Design: Optimized for desktop, tablet, and mobile devices.<br />
+✅ Minimalistic UI: Clean and modern user interface using Tailwind CSS.<br />
+✅ Error Handling: Gracefully handles API failures and displays appropriate messages.<br />
 
-## Expanding the ESLint configuration
+📌 Installation & Setup
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1️⃣ Clone the Repository
+
+```git clone https://github.com/AbhayWuntkal/Showtime-News.git```
+<br />
+```cd Showtime-News```
+
+2️⃣ Install Dependencies
+
+ ```npm install```
+
+3️⃣ Start the Development Server
+
+ ```npm start```
+
+4️⃣ Build for Production
+
+ ```npm run build```
+
+📖 Usage
+
+🔍 Search News: Type a keyword in the search bar to find relevant news articles.<br />
+📂 Filter News by Category: Select a category from the dropdown to view specific news topics.<br />
+🌙 Responsive Design: Works seamlessly across all devices.<br />
+⚡ Fast Performance: Optimized for speed and efficiency.<br />
+
