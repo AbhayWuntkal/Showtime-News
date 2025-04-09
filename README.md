@@ -45,6 +45,8 @@ This is the Figma UI / UX prototype. <br />
 
 <a href="https://www.figma.com/proto/b0gRmeoD2Dh4Y2hAwCok7z/Showtime-Media?page-id=0%3A1&node-id=25-20&viewport=-56%2C-100%2C0.21&t=YHFQhgt7bhR3X707-1&scaling=scale-down&content-scaling=fixed"> Figma UI / UX prototype <a/>
 
+https://drive.google.com/file/d/1-StggCNJ1vtBcE8sPk1Dzt5w5usaYzUz/view?usp=sharing
+
 🎦Site Demo<br />
 
 
