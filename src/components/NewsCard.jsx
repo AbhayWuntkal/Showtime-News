@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { Bookmark } from "lucide-react";
 import { useEffect, useState } from "react";
-import { FaYoutube, FaHeart } from "react-icons/fa";
+import { motion } from "framer-motion"; // Import framer-motion
 
 const NewsCard = ({ article, category = "", onRemoveBookmark = "" }) => {
 	const [isBookmark, setIsBookmark] = useState(false);
+	// const [imageLoaded, setImageLoaded] = useState(false);
+	// const [imageError, setImageError] = useState(false);
 
 	// Check if article is already in bookmarks
 	useEffect(() => {
@@ -67,8 +69,13 @@ const NewsCard = ({ article, category = "", onRemoveBookmark = "" }) => {
 	};
 
 	return (
-		<div className='p-2 h-[400px]'>
-			<div className='bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 h-full flex flex-col'>
+		<motion.div
+			initial={{ opacity: 0, y: 20 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.5, ease: "easeOut" }}
+			className='p-2 h-[400px]'
+		>
+			<div className='bg-white rounded-3xl shadow-md overflow-hidden border border-gray-200 h-full flex flex-col'>
 				{/* Image */}
 				{article.urlToImage && (
 					<img
@@ -79,38 +86,48 @@ const NewsCard = ({ article, category = "", onRemoveBookmark = "" }) => {
 				)}
 
 				{/* Content */}
-				<div className='p-4 flex flex-col flex-grow'>
+				<div className='p-4 flex flex-col flex-grow group'>
 					{/* Category */}
-					<span className='text-xs text-blue-500 uppercase font-medium'>
+					<span className='text-xs font-semibold text-blue-600 uppercase tracking-wide'>
 						{category || "General"}
 					</span>
 
-					{/* Title (Truncated to 10 words) */}
+					{/* Title */}
 					<a
 						href={article.url}
 						target='_blank'
 						rel='noopener noreferrer'
-						className='text-indigo-500 hover:text-indigo-700 font-semibold text-md'
+						className='group'
 					>
-						<h3 className='mt-2 text-lg font-semibold text-gray-800 hover:text-blue-600'>
-							{truncateText(article.title, 10)}
+						<h3 className='mt-2 text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-200 line-clamp-2'>
+							{truncateText(article.title, 15)}
 						</h3>
 					</a>
 
 					{/* Source and Date */}
-					<p className='mt-1 text-gray-500 text-sm'>
-						Source: {article.source?.name || "Unknown"} |{" "}
-						{formatDate(article.publishedAt)}
-					</p>
+					<div className='mt-2 flex items-center flex-wrap text-xs text-gray-500'>
+						{article.source?.name && (
+							<span className='mr-2 px-2 py-1 bg-gray-200 rounded-full'>
+								{article.source.name}
+							</span>
+						)}
+						{article.publishedAt && (
+							<span>{formatDate(article.publishedAt)}</span>
+						)}
+					</div>
 
-					{/* Description (Truncated to 20 words) */}
-					<p className='mt-2 text-gray-600 text-sm flex-grow'>
-						{truncateText(article.description, 17)}
+					{/* Description */}
+					<p className='mt-2 text-sm text-gray-500 group-hover:text-gray-600 transition-colors duration-200 flex-grow'>
+						<span className='hidden sm:inline'>
+							{truncateText(article.description, 15)}
+						</span>
+						<span className='sm:hidden sm:text-sm'>
+							{truncateText(article.description, 12)}
+						</span>
 					</p>
 
 					{/* Footer: Read More & Bookmark */}
 					<div className='mt-2 flex items-center justify-between'>
-						{/* Read More Button */}
 						<a
 							href={article.url}
 							target='_blank'
@@ -120,7 +137,6 @@ const NewsCard = ({ article, category = "", onRemoveBookmark = "" }) => {
 							Read More
 						</a>
 
-						{/* Bookmark Button */}
 						<button
 							onClick={toggleBookmark}
 							className='bg-transparent hover:bg-gray-100 rounded-full p-1'
@@ -136,7 +152,7 @@ const NewsCard = ({ article, category = "", onRemoveBookmark = "" }) => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
