@@ -1,4 +1,4 @@
-import { X, Linkedin, Facebook, Instagram } from "lucide-react";
+import { X, Linkedin, Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
 	return (
@@ -22,7 +22,7 @@ const Footer = () => {
 				<div className='flex items-center space-x-4'>
 					<span>Follow Showtime News On:</span>
 					<a className=' text-white'>
-						<X size={20} />
+						<Twitter size={20} />
 					</a>
 					<a className=' text-white'>
 						<Linkedin size={20} />
