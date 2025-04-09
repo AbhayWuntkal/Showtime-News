@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Bookmark } from "lucide-react";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion"; // Import framer-motion

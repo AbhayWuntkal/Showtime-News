@@ -4,8 +4,6 @@ import NewsCard from "./NewsCard";
 import moment from "moment";
 import { TrendingUp } from "lucide-react"; // Import the stock uptrend icon
 import { motion } from "framer-motion"; // Import framer-motion for animations
-import { truncate } from "lodash";
-// import { formatDistanceToNow } from "date-fns";
 
 const NewsList = ({
 	searchQuery,
@@ -229,7 +227,7 @@ const NewsList = ({
 													<div className='flex items-center mt-1.5 text-[0.65rem] text-gray-600 gap-2'>
 														{article.source?.name && (
 															<span className='px-2 py-[2px] bg-gray-200 rounded-full'>
-																{article.source.name}
+																{truncateText(article.source.name, 4)}
 															</span>
 														)}
 														{article.publishedAt && (
