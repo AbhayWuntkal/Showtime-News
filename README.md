@@ -47,6 +47,6 @@ This is the Figma UI / UX prototype. <br />
 
 🎦Site Demo<br />
 
-[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://drive.google.com/file/d/1-StggCNJ1vtBcE8sPk1Dzt5w5usaYzUz/preview)
+📽️[Watch the demo](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://drive.google.com/file/d/1-StggCNJ1vtBcE8sPk1Dzt5w5usaYzUz/preview)
 
 
