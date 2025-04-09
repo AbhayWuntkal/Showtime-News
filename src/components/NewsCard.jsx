@@ -4,8 +4,6 @@ import { motion } from "framer-motion"; // Import framer-motion
 
 const NewsCard = ({ article, category = "", onRemoveBookmark = "" }) => {
 	const [isBookmark, setIsBookmark] = useState(false);
-	// const [imageLoaded, setImageLoaded] = useState(false);
-	// const [imageError, setImageError] = useState(false);
 
 	// Check if article is already in bookmarks
 	useEffect(() => {
