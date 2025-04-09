@@ -2,7 +2,7 @@ import { X, Linkedin, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
 	return (
-		<footer className='bg-[#563D82] text-gray-200 py-6 w-full'>
+		<footer className='bg-[#563D82] text-white py-6 w-full'>
 			<div className='container mx-auto px-6 md:px-12'>
 				{/* Logo and Navigation */}
 				<div className='text-2xl font-semibold font-sans mb-4'>
@@ -11,26 +11,26 @@ const Footer = () => {
 
 				{/* Navigation Links */}
 				<nav className='flex space-x-6 text-lg mb-4'>
-					<a className='text-gray-300'>Home</a>
-					<a className='text-gray-300'>Political</a>
-					<a className='text-gray-300'>Technology</a>
-					<a className='text-gray-300'>World</a>
-					<a className='text-gray-300'>Science</a>
+					<a className='text-white'>Home</a>
+					<a className='text-white'>Political</a>
+					<a className='text-white'>Technology</a>
+					<a className='text-white'>World</a>
+					<a className='text-white'>Science</a>
 				</nav>
 
 				{/* Social Links */}
 				<div className='flex items-center space-x-4'>
 					<span>Follow Showtime News On:</span>
-					<a className=' text-gray-300'>
+					<a className=' text-white'>
 						<X size={20} />
 					</a>
-					<a className=' text-gray-300'>
+					<a className=' text-white'>
 						<Linkedin size={20} />
 					</a>
-					<a className=' text-gray-300'>
+					<a className=' text-white'>
 						<Facebook size={20} />
 					</a>
-					<a className=' text-gray-300'>
+					<a className=' text-white'>
 						<Instagram size={20} />
 					</a>
 				</div>
